@@ -1,0 +1,16 @@
+
+
+<h2 class='text-center'>編集</h2>
+<%= form_for @task, :url => {:action => 'update' , :id => @task.id} do |t| %>
+  <p>
+  <%= t.label :content, "内容" %>
+  <%= t.text_field :content, class: 'form-control' %>
+  </p>
+  <p>
+  <%= t.label :detail, "詳細" %>
+  <%= t.text_field :detail, class: 'form-control' %>
+  </p>
+  <%= t.submit "変更を保存", class: 'btn btn-warning' %>
+<% end %>
+
+<%= link_to "一覧へ戻る", tasks_index_path, class: 'btn btn-primary' %>

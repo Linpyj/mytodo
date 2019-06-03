@@ -1,0 +1,8 @@
+
+<h2 class="text-center">作成したタスク</h2>
+<div class="container">
+  <h3>内容 :<%= @task[:content] %></h3>
+  <h4>詳細 :<%= @task[:detail] %></h4>
+</div>
+
+<%= link_to '一覧に戻る', tasks_index_path, class:'btn btn-primary' %>

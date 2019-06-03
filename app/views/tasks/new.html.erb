@@ -1,0 +1,14 @@
+
+<div class="container">
+  <h2 class="text-center">新規登録</h2>
+  <%= form_tag('/tasks/create') do %>
+    <%= label_tag :内容 %>
+    <%= text_field_tag :content,'',class: 'form-control' %>
+    <%= label_tag :説明 %>
+    <%= text_area_tag :detail, '',class: 'form-control' %>
+    <%= submit_tag :保存, class: 'btn btn-warning mt-3' %>
+  <% end %>
+
+  <%= link_to "一覧へ戻る", tasks_index_path, class: 'btn btn-primary mt-3' %>
+
+</div>
