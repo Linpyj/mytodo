@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # 以下、勝手に変更
 
-ruby '2.3.1'
+ruby '2.4.6'
 
 
 
